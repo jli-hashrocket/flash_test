@@ -1,5 +1,7 @@
 FlashTest::Application.routes.draw do
-  resources :home
+  resources :home, only: [:index]
+  resources :bio, only: [:index, :new]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
